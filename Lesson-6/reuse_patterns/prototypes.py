@@ -1,14 +1,9 @@
-class Observer:
-
-    def update(self, subject):
-        pass
+import copy
 
 
-class Subject:
+class PrototypeMixin:
 
-    def __init__(self):
-        self.observers = []
+    # прототип
 
-    def notify(self):
-        for item in self.observers:
-            item.update(self)
+    def clone(self):
+        return copy.deepcopy(self)
