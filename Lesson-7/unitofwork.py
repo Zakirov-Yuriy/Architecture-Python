@@ -2,7 +2,6 @@ import threading
 
 
 class UnitOfWork:
-
     """
     Паттерн UNIT OF WORK
     """

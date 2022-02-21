@@ -7,6 +7,7 @@ class SingletonByName(type):
         cls.__instance = {}
 
     def __call__(cls, *args, **kwargs):
+        global name
         if args:
             name = args[0]
         if kwargs:
